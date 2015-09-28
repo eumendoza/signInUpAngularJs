@@ -1,0 +1,30 @@
+{
+  "name": "signInUpAngularJS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/eumendoza/signInUpAngularJs",
+  "authors": [
+    "Eugenio Mendoza"
+  ],
+  "description": "Register and Login with AngularJS",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "register",
+    "login",
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.6",
+    "bootstrap": "~3.3.5",
+    "angular-route": "~1.4.6"
+  }
+}

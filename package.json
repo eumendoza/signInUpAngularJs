@@ -1,0 +1,21 @@
+{
+  "name": "signinupangularjs",
+  "version": "0.0.1",
+  "description": "Register and login with AngularJS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eumendoza/signInUpAngularJs.git"
+  },
+  "keywords": [
+    "angular",
+    "register",
+    "login"
+  ],
+  "author": "Eugenio Mendoza",
+  "license": "MIT",
+  "homepage": "https://github.com/eumendoza/signInUpAngularJs#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}
