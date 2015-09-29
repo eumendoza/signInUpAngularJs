@@ -1,9 +1,16 @@
-<form class="form-signin">
-	<h2 class="form-signin-heading"></h2>
-	<label for="inputEmail">Email address</label>
-		<input type="email" id="inputEmail" name="inputEmail" required></input>
-	<label for="inputPassword">Password</label>
-		<input type="password" id="inputPassword" name="inputPassword" required></input>
-	<button class="btn btn-lg btn-primary" type="submit"> Sign In</button>
-</form>
-<a href="" class="btn btn-lg btn-warning">Sign Up</a>
+<div class="row center-block">
+	<h2>Login form</h2>
+	<form>
+		<div class="form-group">
+	    	<label for="exampleInputEmail1">Email address</label>
+	    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required ng-model="user.email">
+	  	</div>
+	  	<div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required ng-model="user.password">
+	  	</div>
+		<button class="btn btn-lg btn-primary" ng-click="login()"> Sign In</button>
+	</form>
+	<hr></hr>
+	<a href="" class="btn btn-lg btn-warning">Sign Up</a>
+</div>

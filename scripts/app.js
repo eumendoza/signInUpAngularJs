@@ -7,8 +7,8 @@ angular.module('registerApp').config(['$routeProvider', function($routeProvider)
 			controller: 'loginCtrl'
 		})
 		.when('/register', {
-			templateUrl: '',
-			controller: ''
+			templateUrl: 'views/register.html',
+			controller: 'registerCtrl'
 		})
 		.otherwise({
 			redirectTo: '/login'
