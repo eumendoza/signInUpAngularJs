@@ -1,7 +1,7 @@
 <div class="row center-block">
 	<h2>Register form</h2>
 	<form name="fRegister" novalidate>
-		<div class="form-group" ng-class="{'has-error': (fRegister.$submitted && (fRegister.rEmail.$error.required || fRegister.rEmail.$error.email)) }">
+		<div class="form-group" ng-class="{'has-error': (fRegister.$submitted && (fRegister.rEmail.$error.required || fRegister.rEmail.$error.email))}">
 	    	<label for="exampleInputEmail1">Email address</label>
 	    	<input type="email" name="rEmail" class="form-control" id="exampleInputEmail1" placeholder="Email" required ng-model="uregister.email">
 	  	</div>
