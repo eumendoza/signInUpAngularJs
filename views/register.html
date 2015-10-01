@@ -1,20 +1,20 @@
 <div class="row center-block">
 	<h2>Register form</h2>
-	<form>
-		<div class="form-group">
+	<form name="fRegister" novalidate>
+		<div class="form-group" ng-class="{'has-error': (fRegister.$submitted && (fRegister.rEmail.$error.required || fRegister.rEmail.$error.email)) }">
 	    	<label for="exampleInputEmail1">Email address</label>
-	    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required ng-model="register.email">
+	    	<input type="email" name="rEmail" class="form-control" id="exampleInputEmail1" placeholder="Email" required ng-model="uregister.email">
 	  	</div>
-	  	<div class="form-group">
+	  	<div class="form-group" ng-class="{'has-error': (fRegister.$submitted && fRegister.rPass.$error.required)}">
 		    <label for="exampleInputPassword1">Password</label>
-		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required ng-model="register.password">
+		    <input type="password" name="rPass" class="form-control" id="exampleInputPassword1" placeholder="Password" required ng-model="uregister.password">
 	  	</div>
-	  	<div class="form-group">
+	  	<div class="form-group" ng-class="{'has-error': (fRegister.$submitted && fRegister.rRepeatPass.$error.required), 'has-warning': (fRegister.$submitted && fRegister.rRepeatPass.$error.pattern)}">
 		    <label for="exampleInputPassword2">Password</label>
-		    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repeat Password" required ng-model="register.password2">
+		    <input type="password" name="rRepeatPass" class="form-control" id="exampleInputPassword2" placeholder="Repeat Password" required ng-model="uregister.password2" ng-pattern="(uregister.password)">
 	  	</div>
-		<button class="btn btn-lg btn-primary">Sign Up</button>
+		<button class="btn btn-lg btn-primary" ng-click="register(!fRegister.$invalid)">Sign Up</button>
 	</form>
 	<hr></hr>
-	<a href="" class="btn btn-lg btn-warning">Login</a>
+	<a href="" class="btn btn-lg btn-warning" ng-href="#/login">Login</a>
 </div>
